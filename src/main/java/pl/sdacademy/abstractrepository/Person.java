@@ -1,6 +1,6 @@
-package pl.sdacademy.repository;
+package pl.sdacademy.abstractrepository;
 
-public class Person {
+public class Person implements Entity{
     private Integer id;
     private String firstName;
     private String lastName;
@@ -19,7 +19,7 @@ public class Person {
         this.age = age;
     }
 
-    public Person setId(int id) {
+    public Person setId(Integer id) {
         this.id = id;
         return this;
     }
@@ -38,6 +38,11 @@ public class Person {
 
     public Integer getId() {
         return id;
+    }
+
+    @Override
+    public void setId(int generateNextId) {
+        this.id = id;
     }
 
     @Override

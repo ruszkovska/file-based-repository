@@ -1,2 +1,2 @@
-15,190,Ford Fiesta, Blue,
+15,190,Ford Fiesta, Blue
 10,210,Citroen C4, White
